@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+poetry.lock
 .Python
 build/
 develop-eggs/
@@ -36,6 +37,9 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+# Test Artifacts
+*.db
 
 # Unit test / coverage reports
 htmlcov/

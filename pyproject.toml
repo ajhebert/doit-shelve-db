@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "doit-shelve-db"
+version = "0.1.0"
+description = "A shelve-based backend for PyDoit"
+authors = ["Andrew Hebert Jr. <gingergiant.me@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "doit_shelve_db"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+doit = "^0.36.0"
+
+[tool.doit]
+backend = "shelve"
+
+[tool.doit.plugins.backend]
+shelve = "doit_shelve_db:ShelveDB"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

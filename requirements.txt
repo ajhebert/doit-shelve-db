@@ -1,0 +1,5 @@
+# Requires Python 3.10.4 or newer.
+cloudpickle==2.2.1
+doit==0.36.0
+importlib-metadata==6.0.0
+zipp==3.15.0
